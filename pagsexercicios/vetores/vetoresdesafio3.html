@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <title>Vetores Unidimensionais - Desafio 3</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+            *{
+                margin: 0px;
+                font-family: "Ubunto", sans-serif;
+            }
+
+            :root{
+                --cor-primaria: #87a3f0;
+                --cor-secundaria: #5d70a731;
+                --cor-preta: black;
+                --cor-complementar: #d787f0;
+            }
+
+            body{
+                height: 100vh;
+                background: url(../../img/bg.jpg) no-repeat center bottom;
+                background-size: cover;
+                background-attachment: fixed;
+                color: var(--cor-preta);
+                text-align: center;
+            }
+
+            section{
+                margin: 50px auto;
+                display: flex;
+                flex-flow: column;
+            }
+
+            section h1{
+                width: 350px;
+                margin: auto;
+                padding: 20px;
+                font-size: 1.5em;
+                border: 3px solid black;
+                border-radius: 8px;
+                color: black;
+                background-color: rgba(201, 201, 201, 0.3);
+                backdrop-filter: blur(8px) saturate(150%);
+            }
+
+            .cadnum{
+                width: 300px;
+                border: 3px solid black;
+                border-radius: 7px;
+                margin: 50px auto;
+                margin-bottom: 10px;
+                background-color: rgba(201, 201, 201, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+            }
+
+            .cadnum > legend{
+                font-size: 1.2em;
+            }
+
+            .cadnum > label{
+                float: left;
+                margin: 3px 0px 6px 0px;
+            }
+
+            .cadnum > input{
+                margin: auto;
+                width: 100%;
+                padding: 5px 0;
+                background-color: ivory;
+            }
+
+            .cadnum > button{
+                width: 30%;
+                margin: 10px 0px 5px 0px;
+                background-color: #b1ccf5;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            button:hover{
+                opacity: 0.8;
+            }
+
+            .resultados{
+                margin: 5px;
+                padding: 5px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+
+            .cadnum > p{
+                color: white;
+                padding-bottom: 5px;
+            }
+            input{
+                cursor: pointer;
+                font-size: 1.2em;
+                color: white;
+                border: 2px solid black;
+                border-radius: 5px;
+                background-color: rgba(201, 201, 201, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+                padding: 5px;
+            }
+            input:hover{
+                color: black;
+                background-color: rgba(185, 185, 185, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+                transition: 0.2s ease;
+            }
+            a{
+                text-decoration: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 5px;
+                color: white;
+                background-color: rgba(185, 185, 185, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+            }
+            a:hover{
+                color: black;
+                background-color: rgba(185, 185, 185, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+                transition: 0.2s ease;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(200, 200, 200);">
+        <form style="text-align: center;">
+                <br>
+                <textarea name="fonte" cols="70" rows="20">
+                    <!DOCTYPE html>
+                    <html lang="pt-br">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Vetores Unidimensionais - Desafio 3</title>
+                        <style>
+                            *{
+                                margin: 0px;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            }
+
+                            :root{
+                                --cor-primaria: #87a3f0;
+                                --cor-secundaria: #5d70a731;
+                                --cor-preta: black;
+                                --cor-complementar: #d787f0;
+                            }
+
+                            body{
+                                height: 100vh;
+                                /* background-image: linear-gradient(to bottom, var(--cor-primaria), var(--cor-complementar)); */
+                                background: url(../../img/bg.jpg) no-repeat;
+                                background-position: bottom center;
+                                background-size: cover;
+                                background-attachment: fixed;
+                                color: var(--cor-preta);
+                                text-align: center;
+                            }
+
+                            section{
+                                margin: 50px auto;
+                                display: flex;
+                                flex-flow: column;
+                            }
+
+                            section h1{
+                                width: 400px;
+                                margin: auto;
+                                padding: 20px;
+                                font-size: 1.5em;
+                                /* Minhas adições*/
+                                border: 3px solid black;
+                                border-radius: 8px;
+                                color: black;
+                                background-color: rgba(201, 201, 201, 0.3);
+                                backdrop-filter: blur(8px) saturate(150%);
+                            }
+
+                            .cadnum{
+                                width: 400px;
+                                border: 3px solid black;
+                                border-radius: 7px;
+                                margin: 50px auto;
+                                /* font-weight: bold; */
+                                margin-bottom: 10px;
+                                background-color: rgba(201, 201, 201, 0.5);
+                                backdrop-filter: blur(8px) saturate(150%);
+                            }
+
+                            .cadnum > legend{
+                                font-size: 1.2em;
+                            }
+
+                            .cadnum > label{
+                                float: left;
+                                margin: 3px 0px 6px 0px;
+                            }
+
+                            .cadnum > input{
+                                margin: auto;
+                                width: 100%;
+                                padding: 5px 0;
+                                background-color: ivory;
+                            }
+
+                            .cadnum > button{
+                                width: 30%;
+                                margin: 10px 0px 5px 0px;
+                                background-color: #b1ccf5;
+                                font-weight: bold;
+                                font-size: 16px;
+                            }
+
+                            button:hover{
+                                opacity: 0.8;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <section>
+                            <h1>Desafio 3</h1>
+                            <form action="#" method="get" name="frmvetor" onsubmit="return validaProc()">
+                                <fieldset class="cadnum">
+                                    <legend>Entrada de dados</legend>
+                                    <label for="num1">Número 1:</label>
+                                    <input type="text" id="num1">
+
+                                    <label for="num2">Número 2:</label>
+                                    <input type="text" id="num2">
+
+                                    <label for="num3">Número 3:</label>
+                                    <input type="text" id="num3">
+
+                                    <label for="num4">Número 4:</label>
+                                    <input type="text" id="num4">
+
+                                    <label for="num5">Número 5:</label>
+                                    <input type="text" id="num5">
+
+                                    <label for="mult">Multiplicador:</label>
+                                    <input type="mult" id="mult">
+                                    <button type="submit">Enviar</button>
+                                </fieldset>
+                            </form>
+                        </section>
+                        <script>
+                            function validaProc(){
+
+                                let cxNum1 = document.getElementById("num1");
+                                let cxNum2 = document.getElementById("num2");
+                                let cxNum3 = document.getElementById("num3");
+                                let cxNum4 = document.getElementById("num4");
+                                let cxNum5 = document.getElementById("num5");
+                                let cxMult = document.getElementById("mult");
+
+                                if(cxNum1.value == ""){
+                                    cxNum1.focus();
+                                    alert("Digite um número válido no campo 'Número 1'.")
+                                    return false;
+                                }else if(cxNum2.value == ""){
+                                    cxNum2.focus();
+                                    alert("Digite um número válido no campo 'Número 2'.")
+                                    return false;
+                                }else if(cxNum3.value == ""){
+                                    cxNum3.focus();
+                                    alert("Digite um número válido no campo 'Número 3'.")
+                                    return false;
+                                }else if(cxNum4.value == ""){
+                                    cxNum4.focus();
+                                    alert("Digite um número válido no campo 'Número 4'.")
+                                    return false;
+                                }else if(cxNum5.value == ""){
+                                    cxNum5.focus();
+                                    alert("Digite um número válido no campo 'Número 5'.")
+                                    return false;
+                                }else if(cxMult.value == ""){
+                                    cxMult.focus();
+                                    alert("Digite um número válido no campo 'mult'.")
+                                }else{
+
+                                    let vetorA = [parseInt(cxNum1.value), parseInt(cxNum2.value), parseInt(cxNum3.value), parseInt(cxNum4.value), parseInt(cxNum5.value)];
+                                    let vetorB = [];
+
+                                    console.log("Valores do primeiro vetor:")
+                                    for(let i = 0; i < 5; i++){
+                                        console.log("Pos " + i + ": " + vetorA[i]);
+                                    }
+                                    
+
+                                    console.log("Valores do segundo vetor:")
+                                    for(let i = 0; i < 5; i++){
+                                        vetorB[i] = vetorA[i] * parseInt(cxMult.value);
+                                        console.log("Pos " + i + ": " + vetorB[i]);
+                                    }
+                                    
+                                }
+
+                                return false;    
+                                }
+                        </script>
+                    </body>
+                    </html>
+                </textarea>
+                <br><br>
+                <input type="button" value="Executar o código" onclick="document.write(fonte.value);">
+                <br><br>
+                <a href="../../pagsprincipais/estruvetores.html">Voltar</a>
+        </form>
+    </body>
+</html>

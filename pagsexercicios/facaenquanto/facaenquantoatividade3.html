@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <title>Faça Enquanto - Atividade 3</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+            *{
+                margin: 0px;
+                font-family: "Ubunto", sans-serif;
+            }
+
+            :root{
+                --cor-primaria: #87a3f0;
+                --cor-secundaria: #5d70a731;
+                --cor-preta: black;
+                --cor-complementar: #d787f0;
+            }
+
+            body{
+                height: 100vh;
+                background: url(../../img/bg.jpg) no-repeat center bottom;
+                background-size: cover;
+                background-attachment: fixed;
+                color: var(--cor-preta);
+                text-align: center;
+            }
+
+            section{
+                margin: 50px auto;
+                display: flex;
+                flex-flow: column;
+            }
+
+            section h1{
+                width: 350px;
+                margin: auto;
+                padding: 20px;
+                font-size: 1.5em;
+                border: 3px solid black;
+                border-radius: 8px;
+                color: black;
+                background-color: rgba(201, 201, 201, 0.3);
+                backdrop-filter: blur(8px) saturate(150%);
+            }
+
+            .cadnum{
+                width: 300px;
+                border: 3px solid black;
+                border-radius: 7px;
+                margin: 50px auto;
+                margin-bottom: 10px;
+                background-color: rgba(201, 201, 201, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+            }
+
+            .cadnum > legend{
+                font-size: 1.2em;
+            }
+
+            .cadnum > label{
+                float: left;
+                margin: 3px 0px 6px 0px;
+            }
+
+            .cadnum > input{
+                margin: auto;
+                width: 100%;
+                padding: 5px 0;
+                background-color: ivory;
+            }
+
+            .cadnum > button{
+                width: 30%;
+                margin: 10px 0px 5px 0px;
+                background-color: #b1ccf5;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            button:hover{
+                opacity: 0.8;
+            }
+
+            .resultados{
+                margin: 5px;
+                padding: 5px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+
+            .cadnum > p{
+                color: white;
+                padding-bottom: 5px;
+            }
+            input{
+                cursor: pointer;
+                font-size: 1.2em;
+                color: white;
+                border: 2px solid black;
+                border-radius: 5px;
+                background-color: rgba(201, 201, 201, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+                padding: 5px;
+            }
+            input:hover{
+                color: black;
+                background-color: rgba(185, 185, 185, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+                transition: 0.2s ease;
+            }
+            a{
+                text-decoration: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 5px;
+                color: white;
+                background-color: rgba(185, 185, 185, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+            }
+            a:hover{
+                color: black;
+                background-color: rgba(185, 185, 185, 0.5);
+                backdrop-filter: blur(8px) saturate(150%);
+                transition: 0.2s ease;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(200, 200, 200);">
+        <form style="text-align: center;">
+                <br>
+                <textarea name="fonte" cols="70" rows="20">
+                    <!DOCTYPE html>
+                    <html lang="pt-br">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Atividade 3</title>
+                        <style>
+                            *{
+                                margin: 0px;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            }
+
+                            :root{
+                                --cor-primaria: #87a3f0;
+                                --cor-secundaria: #687fbc;
+                                --cor-complementar: #141413;
+                            }
+
+                            body{
+                                height: 100vh;
+                                background-color: var(--cor-primaria);
+                                color: var(--cor-complementar);
+                                text-align: center;
+                            }
+
+                            section{
+                                margin: 50px auto;
+                                display: flex;
+                                flex-flow: column;
+                            }
+
+                            section h1{
+                                width: 400px;
+                                margin: auto;
+                                padding: 20px;
+                                font-size: 1.5em;
+                                /* Minhas adições*/
+                                border: 2px solid ivory;
+                                border-radius: 8px;
+                                color: ivory;
+                                background-color: var(--cor-secundaria);
+                            }
+
+                            .cadnota, .resultados{
+                                width: 400px;
+                                border-radius: 7px;
+                                margin: 50px auto;
+                                /* font-weight: bold; */
+                                margin-bottom: 10px;
+                            }
+
+                            .cadnota > legend, .resultados > legend{
+                                font-size: 1.2em;
+                            }
+
+                            .cadnota > label{
+                                float: left;
+                                margin: 3px 0px 6px 0px;
+                            }
+
+                            .cadnota > input{
+                                margin: auto;
+                                width: 100%;
+                                padding: 5px 0;
+                                background-color: ivory;
+                            }
+
+                            .cadnota > button{
+                                width: 30%;
+                                margin: 10px 0px 5px 0px;
+                                background-color: #b1ccf5;
+                                font-weight: bold;
+                                font-size: 16px;
+                            }
+
+                            button:hover{
+                                opacity: 0.8;
+                            }
+
+                            .cadmedialuno1 input:hover{
+                                opacity: 0.8;
+                            }
+
+                            fieldset.resultados{
+                                border: 1px solid ivory;
+                                border-radius: 5px;
+                            }
+
+                            fieldset.resultados > h2{
+                                margin: 5px;
+                            }
+
+                            fieldset.resultados > h3{
+                                margin: auto;
+                                margin-bottom: 5px;
+                                padding: 5px;
+                                border: 2px solid black;
+                                border-radius: 5px;
+                                background-color: var(--cor-primaria);
+                            }
+
+                            fieldset.resultados > #turma1, #turma2, #turma3, #media-geral{
+                                margin: auto;
+                                margin-bottom: 7px;
+                                width: 150px;
+                                padding: 10px;
+                                border-radius: 5px;
+                                text-align: center;
+                                background-color: var(--cor-complementar);
+                                color: var(--cor-primaria);
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <section>
+                            <h1>Atividade 3 - Notas</h1>
+                            <form name="frmnotas" action="#" method="get" onsubmit="return validaProc()">
+                                <fieldset class="cadnota">
+                                    <legend>Entrada de Dados:</legend>
+                                        
+                                    <label for="numturma1">Número de alunos na 1ª turma (até 10):</label>
+                                    <input type="text" name="txtnum" id="numturma1">
+
+                                    <label for="numturma2">Número de alunos na 2ª turma (até 10):</label>
+                                    <input type="text" name="txtnum" id="numturma2">
+
+                                    <label for="numturma3">Número de alunos na 3ª turma (até 10):</label>
+                                    <input type="text" name="txtnum" id="numturma3">
+
+                                    <button type="reset">Limpar</button>
+                                    <button type="submit">Enviar</button>
+                                </fieldset>
+                                <fieldset class="resultados">
+                                    <legend>Saída de dados:</legend>
+
+                                    <h3>Alunos acima da média na 1ª turma:</h3>
+                                    <div id="turma1">Ainda não informado</div>
+
+                                    <h3>Alunos acima da média na 2ª turma:</h3>
+                                    <div id="turma2">Ainda não informado</div>
+
+                                    <h3>Alunos acima da média na 3ª turma:</h3>
+                                    <div id="turma3">Ainda não informado</div>
+
+                                    <h3>Média geral da escola</h3>
+                                    <div id="media-geral">Ainda não informado</div>
+                                </fieldset>
+                            </form>
+                        </section>
+                        <script>
+                            function validaProc(){
+                                const cxAlunosTurma1 = document.querySelector("#numturma1");
+                                const cxAlunosTurma2 = document.querySelector("#numturma2");
+                                const cxAlunosTurma3 = document.querySelector("#numturma3");
+
+                                let alunosTurma1 = parseInt(cxAlunosTurma1.value);
+                                let alunosTurma2 = parseInt(cxAlunosTurma2.value);
+                                let alunosTurma3 = parseInt(cxAlunosTurma3.value);
+
+                                if(isNaN(alunosTurma1) || alunosTurma1 <= 0 || alunosTurma1 > 10){
+                                    cxAlunosTurma1.focus();
+                                    alert("Digite um número válido de alunos na 1ª turma (até 10).");
+                                    return false;
+                                }else if(isNaN(alunosTurma2) || alunosTurma2 <= 0 || alunosTurma2 > 10){
+                                    cxAlunosTurma2.focus();
+                                    alert("Digite um número válido de alunos na 2ª turma (até 10).");
+                                    return false;
+                                }else if(isNaN(alunosTurma3) || alunosTurma3 <= 0 || alunosTurma3 > 10){
+                                    cxAlunosTurma3.focus();
+                                    alert("Digite um número válido de alunos na 3ª turma (até 10).");
+                                    return false;
+                                }else{
+                                    gerenciarNotas(alunosTurma1, alunosTurma2, alunosTurma3);
+                                    return false;
+                                }
+                            }
+
+                            function gerenciarNotas(alunosTurma1, alunosTurma2, alunosTurma3){
+                                let mediaGeral = 0;
+                                let acimaDaMediaTurma1 = 0;
+                                let acimaDaMediaTurma2 = 0;
+                                let acimaDaMediaTurma3 = 0;
+
+                                let cont = 0;
+                                do{
+                                    let nota = parseFloat(prompt("Qual a nota do "+(cont+1)+"º aluno da 1ª turma?"));
+                                    if(!isNaN(nota) && nota >= 0 && nota <= 10){
+                                        cont++;
+                                        mediaGeral += nota;
+                                        if(nota >= 7){
+                                            acimaDaMediaTurma1++;
+                                        }
+                                    }else{
+                                        alert("Digite um número válido");
+                                    }
+                                }while(cont < alunosTurma1);
+
+                                cont = 0;
+                                do{
+                                    let nota = parseFloat(prompt("Qual a nota do "+(cont+1)+"º aluno da 2ª turma?"));
+                                    if(!isNaN(nota) && nota >= 0 && nota <= 10){
+                                        cont++;
+                                        mediaGeral += nota;
+                                        if(nota >= 7){
+                                            acimaDaMediaTurma2++;
+                                        }
+                                    }else{
+                                        alert("Digite um número válido");
+                                    }
+                                }while(cont < alunosTurma2);
+
+                                cont = 0;
+                                do{
+                                    let nota = parseFloat(prompt("Qual a nota do "+(cont+1)+"º aluno da 3ª turma?"));
+                                    if(!isNaN(nota) && nota >= 0 && nota <= 10){
+                                        cont++;
+                                        mediaGeral += nota;
+                                        if(nota >= 7){
+                                            acimaDaMediaTurma3++;
+                                        }
+                                    }else{
+                                        alert("Digite um número válido");
+                                    }
+                                }while(cont < alunosTurma3);
+
+                                mediaGeral/= (alunosTurma1 + alunosTurma2 + alunosTurma3);
+
+                                let cxResulTurma1 = document.querySelector("#turma1");
+                                let cxResulTurma2 = document.querySelector("#turma2");
+                                let cxResulTurma3 = document.querySelector("#turma3");
+                                let cxMediaGeral = document.querySelector("#media-geral");
+
+                                cxResulTurma1.innerHTML = parseInt(acimaDaMediaTurma1) + " alunos";
+                                cxResulTurma2.innerHTML = parseInt(acimaDaMediaTurma2) + " alunos";
+                                cxResulTurma3.innerHTML = parseInt(acimaDaMediaTurma3) + " alunos";
+
+                                cxMediaGeral.innerHTML = mediaGeral.toFixed(1);
+
+                                return false;
+                            }
+                        </script>
+                    </body>
+                    </html>
+                </textarea>
+                <br><br>
+                <input type="button" value="Executar o código" onclick="document.write(fonte.value);">
+                <br><br>
+                <a href="../../pagsprincipais/estrurepeticao.html">Voltar</a>
+        </form>
+    </body>
+</html>

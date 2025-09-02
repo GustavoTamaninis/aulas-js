@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Desafio Final | JavaScript</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        .temas{
+            width: 1000px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .cadtext{
+            margin-top: 20px;
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="material-symbols-outlined" id="menu-burger">
+                menu
+            </span>
+        </nav>
+        <h1>Desafio Final de JavaScript  &nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+    </header>
+    <aside id="side-bar">
+        <a href="../index.html">Início</a>
+        <a href="estrucondicional.html">Estruturas Condicionais</a>
+        <a href="estrurepeticao.html">Estruturas de Repetição</a>
+        <a href="estruvetores.html">Vetores</a>
+    </aside>
+    <h2>Estruturas de Repetição</h2>
+    <main>
+        <div class="temas">
+            <section class="cadtext">
+                <h2>Estrutura Para</h2>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela1')">Exemplo</h3>
+                <div class="janela" id="janela1">
+                    <a href="../pagsexercicios/para/paraexemplo.html">Ver código</a>
+                    <p>Uma aplicação que imprime os números de 10 a 1.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela2')">Atividade 1</h3>
+                <div class="janela" id="janela2">
+                    <a href="../pagsexercicios/para/paraatividade1.html">Ver código</a>
+                    <p>Um programa que exibe a tabuada de um número que o usuário escolher.</p>
+                </div>
+
+            </section>
+            <section class="cadtext">
+                <h2>Estrutura Faça-Enquanto</h2>
+                <h3 class="persiana" onclick="alternarPersiana('janela3')">Exemplo</h3>
+                <div class="janela" id="janela3">
+                    <a href="../pagsexercicios/facaenquanto/facaenquantoexemplo.html">Ver código</a>
+                    <p>Uma aplicação que imprime os números de 1 a 10. Desta vez usando a estrutura faça-enquanto (do-while).</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela4')">Atividade 1</h3>
+                <div class="janela" id="janela4">
+                    <a href="../pagsexercicios/facaenquanto/facaenquantoatividade1.html">Ver código</a>
+                    <p>Um algoritmo que vai somando os números que o usuário informar, até ele não querer mais.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela5')">Atividade 2</h3>
+                <div class="janela" id="janela5">
+                    <a href="../pagsexercicios/facaenquanto/facaenquantoatividade2.html">Ver código</a>
+                    <p>Outro programa que exibe a tabuada de um número escolhido pelo usuário.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela6')">Atividade 3</h3>
+                <div class="janela" id="janela6">
+                    <a href="../pagsexercicios/facaenquanto/facaenquantoatividade3.html">Ver código</a>
+                    <p>Um programa que exibe o total de alunos com média superior ou igual a 7 e a média geral de turmas de uma escola informadas pelo usuário.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela7')">Desafio 1</h3>
+                <div class="janela" id="janela7">
+                    <a href="../pagsexercicios/facaenquanto/facaenquantodesafio1.html">Ver código</a>
+                    <p>Uma calculadora de IMC. É executada quantas vezes o usuário desejar.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela8')">Desafio 2</h3>
+                <div class="janela" id="janela8">
+                    <a href="../pagsexercicios/facaenquanto/facaenquantodesafio2.html">Ver código</a>
+                    <p>Um programa que pede o gênero, a idade e o salário de um grupo de pessoas. Exibindo, no fim, a média salarial do grupo, a média de todas as idades e a média do salário feminino.</p>
+                </div>
+            </section>
+            <section class="cadtext">
+                <h2>Estrutura Enquanto</h2>
+                <h3 class="persiana" onclick="alternarPersiana('janela9')">Exemplo</h3>
+                <div class="janela" id="janela9">
+                    <a href="../pagsexercicios/enquanto/enquantoexemplo.html">Ver código</a>
+                    <p>Informa os valores de 1 a 10, utilizando a estrutura Enquanto (while).</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela10')">Atividade 1</h3>
+                <div class="janela" id="janela10">
+                    <a href="../pagsexercicios/enquanto/enquantoatividade1.html">Ver código</a>
+                    <p>Um algoritmo que lê 3 números e imprime seu somatório.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela11')">Atividade 2</h3>
+                <div class="janela" id="janela11">
+                    <a href="../pagsexercicios/enquanto/enquantoatividade2.html">Ver código</a>
+                    <p>Um algoritmo que lê 3 números inteiros e exibe o maior número informado pelo usuário.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela12')">Atividade 3</h3>
+                <div class="janela" id="janela12">
+                    <a href="../pagsexercicios/enquanto/enquantoatividade3.html">Ver código</a>
+                    <p>Um programa que lê 3 números inteiros positivos e exibe a soma dos números divisíveis por 5.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela13')">Desafio 1</h3>
+                <div class="janela" id="janela13">
+                    <a href="../pagsexercicios/enquanto/enquantodesafio1.html">Ver código</a>
+                    <p>Um programa em que o usuário deve acertar a soma de 2 números que ele informar.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../persiana.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+</html>

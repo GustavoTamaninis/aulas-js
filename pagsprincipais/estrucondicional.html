@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Desafio Final | JavaScript</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        .temas{
+            width: 1000px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .cadtext{
+            margin-top: 20px;
+            min-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="material-symbols-outlined" id="menu-burger">
+                menu
+            </span>
+        </nav>
+        <h1>Desafio Final de JavaScript  &nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+    </header>
+    <aside id="side-bar">
+        <a href="../index.html">Início</a>
+        <a href="estrucondicional.html">Estruturas Condicionais</a>
+        <a href="estrurepeticao.html">Estruturas de Repetição</a>
+        <a href="estruvetores.html">Vetores</a>
+    </aside>
+    <h2>Estruturas Condicionais</h2>
+    <main>
+        <div class="temas">
+            <section class="cadtext">
+                <h2>Estrutura Caso</h2>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela1')">Atividade 1</h3>
+                <div class="janela" id="janela1">
+                    <a href="../pagsexercicios/caso/casoatividade1.html">Ver código</a>
+                    <p>Uma aplicação que, baseado na idade que o usuário informa, lhe diz se é um bebê, criança, adolescente ou adulto.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela2')">Atividade 2</h3>
+                <div class="janela" id="janela2">
+                    <a href="../pagsexercicios/caso/casoatividade2.html">Ver código</a>
+                    <p>Uma calculadora simples que diz se o número é par ou ímpar.</p>
+                </div>
+
+            </section>
+            <section class="cadtext">
+                <h2>Estrutura Se</h2>
+                <h3 class="persiana" onclick="alternarPersiana('janela3')">Exemplo</h3>
+                <div class="janela" id="janela3">
+                    <a href="../pagsexercicios/se/seexemplo.html">Ver código</a>
+                    <p>Uma validação simples de campos de um formulário.</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela4')">Atividade 1</h3>
+                <div class="janela" id="janela4">
+                    <a href="../pagsexercicios/se/seatividade1.html">Ver código</a>
+                    <p>Uma calculadora de notas de um aluno</p>
+                </div>
+
+                <h3 class="persiana" onclick="alternarPersiana('janela5')">Atividade 2</h3>
+                <div class="janela" id="janela5">
+                    <a href="../pagsexercicios/se/seatividade2.html">Ver código</a>
+                    <p>Aplicação web que pede 2 dois números e diz se são iguais ou qual é o maior e o menor.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../sidebar.js"></script>
+    <script src="../persiana.js"></script>
+</body>
+</html>
